@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+
+
+  <div  >
+    item <input #i >
+    price <input #p >
+    number <input #n >
+    <input type="button" value="add" (click)="additem(i.value,p.value,n.value)">
+    remove<input #r>
+    <input type="button" value="remove" (click)="removeitem(r.value)">
+
+
+
+
+
+
+    <table style="width:100%" border="black" >
+      <tr>
+        <td>item</td>
+        <td>price</td>
+        <td>count</td>
+      </tr>
+      <tr *ngFor="let i of c">
+      <td>{{i.item}}</td>
+      <td>{{i.price}}</td>
+      <td>{{i.count}}</td>
+</tr>
+    </table>
+
+
+
+
+
+  </div>
+
+</div>
+total is:  {{total}}
+
+
